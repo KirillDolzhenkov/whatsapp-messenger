@@ -4,6 +4,8 @@ type ButtonPropsType = {
     name: string
     callBack: () => void
     className?: string
+    isDisabled?: boolean
+    type?: "button" | "submit" | "reset"
 }
 
 export const Button: React.FC<ButtonPropsType> = (props) => {
@@ -12,6 +14,8 @@ export const Button: React.FC<ButtonPropsType> = (props) => {
         name,
         callBack,
         className = "",
+        isDisabled = false,
+        type = "button",
     } = props;
 
     const onclickHAndler = () => {
@@ -19,6 +23,6 @@ export const Button: React.FC<ButtonPropsType> = (props) => {
     }
 
     return (
-        <button onClick={onclickHAndler} className={className}>{name}</button>
+        <button type={type} onClick={onclickHAndler} className={className} disabled={isDisabled}>{name}</button>
     )
 }
