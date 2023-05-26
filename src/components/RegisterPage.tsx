@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import styles from "../App.module.css"
 import {Button} from "./Button";
-import buttonStyles from "../assets/css/DefaultButton.module.css";
+import buttonStyles from "../assets/css/ButtonStyles.module.css";
 
 export const RegisterPage: React.FC = () => {
 

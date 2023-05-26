@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../App.module.css"
 import {Button} from "./Button";
-import buttonStyles from "../assets/css/DefaultButton.module.css"
+import buttonStyles from "../assets/css/ButtonStyles.module.css"
 
 export const LoginPage: React.FC = () => {
     return (

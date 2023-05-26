@@ -1,9 +1,20 @@
 :root {
     --header-height: 3rem;
 
-    /*colors*/
-    --hue-color: 360;
 
+    --hue-color: 120;
+
+
+    /*new colors*/
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --bd-color: hsl(var(--hue-color), 100%, 74%); /*#7abcff*/
+    --bd-color-darker: 	hsl(calc(var(--hue-color) + 33), 24%, 31%); /*#3e3c61*/
+    --bd-color-darker-alt: 	hsl(calc(var(--hue-color) + 33), 29%, 25%); /*#2f2d52*/
+    --bd-color-lighter: hsl(calc(var(--hue-color) + 32), 22%, 45%); /*#5d5b8d*/
+    --bd-color-lighter-alt: hsl(calc(var(--hue-color) + 16), 78%, 75%); /*#8da4f1*/
+
+
+    /*colors*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -12,7 +23,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
     --container-color: #FFF;
 
     --scroll-bar-color: hsl(var(--hue-color), 12%, 99%);
@@ -121,7 +132,9 @@
 
 /*homePage*/
 .home {
-    background-color: #7abcff;
+    /*background-color: #7abcff;*/
+    /*background-color: var(--bd-color);*/
+    background-color: var(--body-color);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -140,8 +153,10 @@
 /*sidebar*/
 .sidebar {
     flex: 1;
-    border-right: 1px solid #3e3c61;
-    background-color: #3e3c61;
+    /*border-right: 1px solid #3e3c61;*/
+    border-right: 1px solid var(--bd-color-darker);
+    /*background-color: #3e3c61;*/
+    background-color: var(--bd-color-darker);
 }
 
 /*navbar*/
@@ -174,6 +189,8 @@
 
 
 /*chat*/
-.chat {
+/*.chat {
     flex: 2;
-}
+
+    border: red solid 2px;
+}*/

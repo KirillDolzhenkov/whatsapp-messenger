@@ -7,9 +7,9 @@ import { HomePage } from "./components/HomePage";
 const App: React.FC = () => {
     return (
         <div>
-            <RegisterPage/>
-            {/*<LoginPage/>*/}
-            {/*<HomePage/>*/}
+            {/*<RegisterPage/>
+            <LoginPage/>*/}
+            <HomePage/>
         </div>
     );
 }
