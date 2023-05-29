@@ -9,19 +9,22 @@
     color: #ddddf7;
 }
 
+/*
 .logo {
     font-weight: bold;
 }
+*/
 
 .user {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .user img {
     color: #ddddf7;
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     object-fit: cover;
 }

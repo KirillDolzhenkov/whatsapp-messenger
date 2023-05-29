@@ -2,16 +2,44 @@
     --header-height: 3rem;
 
 
-    --hue-color: 120;
+    --hue-color: 120; /*210*/
 
 
     /*new colors*/
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --bd-color: hsl(var(--hue-color), 100%, 74%); /*#7abcff*/
-    --bd-color-darker: 	hsl(calc(var(--hue-color) + 33), 24%, 31%); /*#3e3c61*/
-    --bd-color-darker-alt: 	hsl(calc(var(--hue-color) + 33), 29%, 25%); /*#2f2d52*/
-    --bd-color-lighter: hsl(calc(var(--hue-color) + 32), 22%, 45%); /*#5d5b8d*/
-    --bd-color-lighter-alt: hsl(calc(var(--hue-color) + 16), 78%, 75%); /*#8da4f1*/
+    /*--body-color: hsl(var(--hue-color), 60%, 99%);
+    --bd-color: hsl(var(--hue-color), 100%, 74%); !*#7abcff*!
+    --bd-color-darker: 	hsl(calc(var(--hue-color) + 33), 24%, 31%); !*#3e3c61*!
+    --bd-color-darker-alt: 	hsl(calc(var(--hue-color) + 33), 29%, 25%); !*#2f2d52*!
+    --bd-color-lighter: hsl(calc(var(--hue-color) + 32), 22%, 45%); !*#5d5b8d*!
+    --bd-color-lighter-alt: hsl(calc(var(--hue-color) + 16), 78%, 75%); !*#8da4f1*!*/
+
+    /*new colors2*/
+    --white-rgb: 255,255,255;
+
+    --body-color: #111b21;
+    /*--bd-color: hsl(var(--hue-color), 100%, 74%);*/
+    --bd-color-darker: 	#182229;
+    /*--bd-color-darker-alt: 	#2a3942; hover*/
+    --bd-color-darker-alt: 	#202c33; /*right*/
+    --bd-color-lighter: 	#202c33; /*left*/
+    --bd-color-lighter-alt: #00a884;
+
+    --app-border: rgba(134,150,160,0.15);
+
+    --app-background: #111b21;
+    --app-background-deeper: #0a1014;
+
+    /*--cover-image-background: #1f2b32;*/
+    /*--compose-input-background: #2a3942;*/
+    --compose-input-background: #202c33;
+    --compose-input-text: #fff;
+
+    --scroll-bar-color:  #182229;
+    --scroll-thumb-color: rgba(134,150,160,0.25);
+    --scroll-thumb-color-hover: #2a3942;
+
+    --message-color: #2a3942;
+    --message-color-owner: #00a884;
 
 
     /*colors*/
@@ -26,8 +54,8 @@
     /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
     --container-color: #FFF;
 
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 99%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    /*--scroll-bar-color: hsl(var(--hue-color), 12%, 99%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);*/
 
     --sky-color: linear-gradient(#7587de, #b1d2fa);
     --stars-opacity: 0.4;
@@ -142,10 +170,13 @@
 }
 
 .homeContainer {
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    border: 1px solid var(--app-border);
     border-radius: 10px;
-    width: 65%;
-    height: 85%;
+    /*width: 65%;
+    height: 85%;*/
+    width: 70%;
+    height: 95%;
     display: flex;
     overflow: hidden;
 }

@@ -5,19 +5,32 @@
     overflow: scroll;
 
     overflow-x: hidden; /*!!!*/
+
+    /*background-image: url("../bg-chat-dark.png"); !*!!!*!
+    background-repeat: no-repeat; !*!!!*!
+    background-size: cover; !*!!!*!*/
+    background-image: linear-gradient(
+            var(--app-background),
+            var(--app-background-deeper)
+    ), url("../bg-chat-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center center;
 }
 
 ::-webkit-scrollbar {
     width: .60rem;
     background-color: var(--scroll-bar-color);
-    border-radius: .5rem;
+    /*border-radius: .5rem;*/
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color);
-    border-radius: .5rem;
+    /*border-radius: .5rem;*/
 }
 
+/*
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--text-color-light);
-}
+    background-color: var(--scroll-thumb-color-hover);
+}*/
